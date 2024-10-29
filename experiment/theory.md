@@ -66,9 +66,10 @@ $$\\begin{equation} I_D=I_p\\left\[\frac{V_D}{V_p}-\frac{2}{3}\\left(\frac{V_{bi
 where,
 
 $$ I_p =-\frac{\mu_p {N_A}^2 Z e^2 h^3}{2L\epsilon_r\epsilon_0} \qquad V_p =-\frac{e {N_A} h^2}{2 \epsilon_r\epsilon_0} \qquad eV_{bi} =k_B T \ln (\frac{N_A N_D}{{n_i}^2}) \qquad n_i=\sqrt{N_cN_v(\frac{T}{300})^{3}}\exp(\frac{-E_g}{2k_BT}). $$
+
 In the saturation regime the current is,
 
-$$\\begin{equation} I\_D=I\_p\\left\[\\frac{1}{3}-\\frac{V\_{bi}-V\_G}{V\_p}+\\frac{2}{3}\\left(\\frac{V\_{bi}-V\_G}{V\_p}\\right)^{3/2}\\right\]. \\end{equation}$$
+$$ I_D=I_p [\frac{1}{3} - \frac{V_{bi}-V_G}{V_p} + \frac{2}{3}(\frac{V_{bi}-V_G}{V_p})^{3/2}]$$
 
 These expressions are valid assuming that the pn junction is reverse biased. For a p-channel JFET, $$V_G$$ > 0 and $$V_D$$ < 0 in this regime.
  
