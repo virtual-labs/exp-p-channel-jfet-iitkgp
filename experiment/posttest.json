@@ -1,39 +1,116 @@
-{
-  "version": 2.0,
+
+  {
+	  "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
+	"question": "1. What happens to the depletion region in a P-channel JFET when the gate-source voltage (V_GS) is made more positive?",
+	"answers": {
+		"a": "Depletion region narrows",
+		"b": "Depletion region widens",
+		"c": "Depletion region remains unchanged",
+		"d": "Depletion region oscillates"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
+	"question": "2. In a P-channel JFET, what is the effect of increasing the gate-source voltage (V_GS) beyond the pinch-off voltage (V_P)?",
+	"answers": {
+		"a": "Increases drain current (I_D)",
+		"b": "Decreases drain current (I_D)",
+		"c": "Cuts off drain current (I_D)",
+		"d": "Has no effect on drain current (I_D)"
+	},
+	"correctAnswer": "c",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "3. How does the drain-source voltage (V_DS) affect the drain current (I_D) in the reverse bias condition of a P-channel JFET?",
+	"answers": {
+		"a": "I_D increases linearly with V_DS",
+		"b": "I_D decreases linearly with V_DS",
+		"c": "I_D remains constant regardless of V_DS",
+		"d": "I_D increases rapidly with V_DS"
+	},
+	"correctAnswer": "a",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "4. In a P-channel JFET, what happens when the gate-source voltage (V_GS) is equal to the pinch-off voltage (V_P)?",
+	"answers": {
+		"a": "The device operates in the ohmic region",
+		"b": "The device operates in the saturation region",
+		"c": "The device operates in the cutoff region",
+		"d": "The device breaks down"
+	},
+	"correctAnswer": "c",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "5. What is the characteristic of the drain current (I_D) in the saturation region of a P-channel JFET under reverse bias?",
+	"answers": {
+		"a": "I_D is independent of V_DS",
+		"b": "I_D increases with V_DS",
+		"c": "I_D decreases with V_DS",
+		"d": "I_D is zero"
+	},
+	"correctAnswer": "a",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "6. In a P-channel JFET, what happens to the channel conductivity when the gate-source voltage (V_GS) is made more positive?",
+	"answers": {
+		"a": "Increases",
+		"b": "Decreases",
+		"c": "Remains constant",
+		"d": "Becomes zero"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
+   {
+	"question": "7. What is the typical reverse leakage current in the gate-source junction of a P-channel JFET?",
+	"answers": {
+		"a": "Very high",
+		"b": "Moderate",
+		"c": "Very low",
+		"d": "Zero"
+	},
+	"correctAnswer": "c",
+	"difficulty": "beginner"
+	},
+    {
+	"question": "8. In a P-channel JFET, what condition indicates that the device is in the ohmic region during reverse bias?",
+	"answers": {
+		"a": "V_DS < V_GS - V_P",
+		"b": "V_DS = V_GS - V_P",
+		"c": "V_DS > V_GS - V_P",
+		"d": "V_DS is zero"
+	},
+	"correctAnswer": "a",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "9. What is the effect of reverse biasing the gate-source junction on the overall impedance of a P-channel JFET?",
+	"answers": {
+		"a": "Increases impedance",
+		"b": "Decreases impedance",
+		"c": "No effect on impedance",
+		"d": "Causes impedance to oscillate"
+	},
+	"correctAnswer": "a",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "10. In the context of reverse biasing in a P-channel JFET, what does a higher magnitude of gate-source voltage (V_GS) typically indicate?",
+	"answers": {
+		"a": "Higher drain current (I_D)",
+		"b": "Lower drain current (I_D)",
+		"c": "No change in drain current (I_D)",
+		"d": "Increased gate current (I_G)"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	}
   ]
 }
