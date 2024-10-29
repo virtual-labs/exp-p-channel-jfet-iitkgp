@@ -65,7 +65,8 @@ $$ I_D=I_p[\frac{V_D}{V_p}-\frac{2}{3}(\frac{V_{bi}+V_D-V_G}{V_p})^{3/2}+\frac{2
 
 where,
 
-$$ I_p =-\frac{\mu_p {N_A}^2 Z e^2 h^3}{2L\epsilon_r\epsilon_0} \qquad V_p =-\frac{e {N_A} h^2}{2 \epsilon_r\epsilon_0} \qquad eV_{bi} =k_B T \ln (\frac{N_A N_D}{{n_i}^2}) \qquad n_i=\sqrt{N_cN_v(\frac{T}{300})^{3}}\exp(\frac{-E_g}{2k_BT}). $$
+$$ eV_{bi} = k_B T \ln (\frac{N_A N_D}{{n_i}^2}) \qquad n_i = \sqrt{N_c N_v (\frac{T}{300})^{3}} \exp(\frac{-E_g}{2 k_B T}).$$
+
 
 In the saturation regime the current is,
 
