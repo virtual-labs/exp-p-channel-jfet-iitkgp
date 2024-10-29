@@ -61,7 +61,7 @@ Understanding the behavior of a P-channel JFET in the reverse-biased condition i
 
 The expression for the drain current of a p-channel JFET in the linear regime is,
 
-$$\\begin{equation} I_D=I_p\\left\[\frac{V_D}{V_p}-\frac{2}{3}\\left(\frac{V_{bi}+V_D-V_G}{V_p}\\right)^{3/2}+\frac{2}{3}\\left(\frac{V_{bi}-V_G}{V_p}\\right)^{3/2}\\right\], \\end{equation}$$
+$$ I_D=I_p[\frac{V_D}{V_p}-\frac{2}{3}(\frac{V_{bi}+V_D-V_G}{V_p})^{3/2}+\frac{2}{3}(\frac{V_{bi}-V_G}{V_p})^{3/2}],$$
 
 where,
 
