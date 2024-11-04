@@ -21,12 +21,12 @@ Proper biasing prevents the JFET from operating in undesirable states like satur
 
 ### Gate-Source Junction Reverse Biasing
 
-*   In a P-channel JFET, the gate is typically made of N-type material, and the channel is P-type. To reverse bias the gate-source junction, the gate voltage $$V_G$$ must be more positive relative to the source $$V_S$$.
+*   In a P-channel JFET, the gate is typically made of N-type material, and the channel is P-type. To reverse bias the gate-source junction, the gate voltage V<sub>G</sub> must be more positive relative to the source V<sub>S</sub>.
 *   This increases the width of the depletion region around the gate, reducing the effective width of the P-type channel. Consequently, the conductivity of the channel decreases, limiting the current flow from the drain to the source.
 
-### Drain-Source Voltage ($$V_D$$ < 0)
+### Drain-Source Voltage (V<sub>D</sub> < 0)
 
-*   For a P-channel JFET, the source is usually at a higher potential than the drain. Hence, $$V_D$$ (the drain voltage relative to the source) is negative.
+*   For a P-channel JFET, the source is usually at a higher potential than the drain. Hence, V<sub>D</sub> (the drain voltage relative to the source) is negative.
 *   The negative drain voltage means that the drain is at a lower potential compared to the source, allowing holes (the majority carriers in a P-channel JFET) to flow from the source to the drain.
 
 Key Effects and Characteristics
@@ -34,7 +34,7 @@ Key Effects and Characteristics
 
 ### Depletion Region Control
 
-The width of the depletion region is controlled by the gate-source voltage. A higher $$V_G$$ results in a wider depletion region, effectively narrowing the conductive channel. This is known as the pinch-off effect.
+The width of the depletion region is controlled by the gate-source voltage. A higher V<sub>G</sub> results in a wider depletion region, effectively narrowing the conductive channel. This is known as the pinch-off effect.
 
 ### Current Flow
 
@@ -71,7 +71,7 @@ In the saturation regime the current is,
 
 $$ I_D=I_p [\frac{1}{3} - \frac{V_{bi}-V_G}{V_p} + \frac{2}{3}(\frac{V_{bi}-V_G}{V_p})^{3/2}]$$
 
-These expressions are valid assuming that the pn junction is reverse biased. For a p-channel JFET, $$V_G$$ > 0 and $$V_D$$ < 0 in this regime.
+These expressions are valid assuming that the pn junction is reverse biased. For a p-channel JFET, V<sub>G</sub> > 0 and V<sub>D</sub> < 0 in this regime.
  
  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>    
  
