@@ -1,39 +1,115 @@
-{
-  "version": 2.0,
+  {
+	  "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
+	"question": "1. What happens to the channel of a P-channel JFET when it is reverse biased?",
+	"answers": {
+		"a": "The channel widens",
+		"b": "The channel narrows",
+		"c": "The channel lengthens",
+		"d": "The channel remains unchanged"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
+   {
+	"question": "2. How does the drain current (I_D) in a P-channel JFET respond to an increase in reverse bias voltage (V_GS)?",
+	"answers": {
+		"a": "I_D increases",
+		"b": "I_D decreases",
+		"c": "I_D remains constant",
+		"d": "I_D oscillates"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
+	"question": "3. What is the effect of reverse biasing on the gate-source junction of a P-channel JFET?",
+	"answers": {
+		"a": "Increases current flow through the gate",
+		"b": "Decreases current flow through the gate",
+		"c": "No effect on current flow",
+		"d": "Causes breakdown of the junction"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
+    {
+	"question": "4. In a P-channel JFET, what occurs when the gate-source voltage (V_GS) is made more positive?",
+	"answers": {
+		"a": "The device enters saturation",
+		"b": "The device enters cutoff",
+		"c": "The device enters ohmic region",
+		"d": "The device breaks down"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
+    {
+	"question": "5. What is the pinch-off voltage (V_P) in a P-channel JFET?",
+	"answers": {
+		"a": "The voltage at which the channel is fully open",
+		"b": "The voltage at which the channel is fully closed",
+		"c": "The voltage at which the drain current starts to increase",
+		"d": "The voltage at which the gate-source junction becomes forward biased"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	},
+    {
+	"question": "6. How does the transconductance (g_m) of a P-channel JFET vary with the reverse bias voltage (V_GS)?",
+	"answers": {
+		"a": "Increases linearly",
+		"b": "Decreases linearly",
+		"c": "Increases exponentially",
+		"d": "Decreases exponentially"
+	},
+	"correctAnswer": "d",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "7. In the reverse bias condition, what is the primary factor controlling the drain current (I_D) in a P-channel JFET?",
+	"answers": {
+		"a": "Drain-source voltage (V_DS)",
+		"b": "Gate-source voltage (V_GS)",
+		"c": "Temperature",
+		"d": "Channel length"
+	},
+	"correctAnswer": "b",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "8. What is the relationship between the drain current (I_D) and the gate-source voltage (V_GS) in the reverse bias condition for a P-channel JFET?",
+	"answers": {
+		"a": "I_D is directly proportional to V_GS",
+		"b": "I_D is inversely proportional to V_GS",
+		"c": "I_D is proportional to the square of (V_GS - V_P)",
+		"d": "I_D is proportional to the exponential of V_GS"
+	},
+	"correctAnswer": "c",
+	"difficulty": "intermediate"
+	},
+    {
+	"question": "9. What is the effect of temperature on the reverse bias characteristics of a P-channel JFET?",
+	"answers": {
+		"a": "Increases I_D",
+		"b": "Decreases I_D",
+		"c": "No effect on I_D",
+		"d": "Causes I_D to oscillate"
+	},
+	"correctAnswer": "b",
+	"difficulty": "intermediate"
+	},
+   {
+	"question": "10. In a P-channel JFET, when the gate-source voltage (V_GS) is zero, the device operates in which region?",
+	"answers": {
+		"a": "Ohmic region",
+		"b": "Saturation region",
+		"c": "Cutoff region",
+		"d": "Breakdown region"
+	},
+	"correctAnswer": "b",
+	"difficulty": "beginner"
+	}
   ]
 }
