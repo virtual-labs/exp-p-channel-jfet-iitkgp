@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" rel="stylesheet">
     
 
     <!-- jQuery and jQuery UI -->
@@ -159,6 +159,7 @@
     </div><!--3rd Container under body tag end-->
 	
    <!--simulation start -->
+
    <div align="center";>
     <table><tbody><tr><td valign="top" style="background-color:#ededed;">
 
@@ -277,142 +278,149 @@ td.gray {background-color:cccccc}
 </style>
 
 
+<div class="container"> 
+    <div class="row">
+        <div class="col-md-6 border border-3" style="vertical-align: center;">
+            <table><tbody>
+                <tr>
+                    <td rowspan="2" style="width: 5%; "><i>I<sub>D</sub></i>&nbsp;[mA]</td>
+                    <td>
+                        <div id="placeholder" style="width: 120%; height: 600px;">
+                            <canvas class="flot-base" width="500" height="400" style="position: absolute; left: 0; top: 0;"></canvas>
+                            <div class="flot-text" style="position: absolute; inset: 0; font-size: smaller; color: #545454;">
+                                <div class="flot-x-axis xAxis" style="position: absolute; inset: 0; display: block;">
+                                    <!-- Use a loop or generate tick labels dynamically with JavaScript if possible -->
+                                    <div class="flot-tick-label" style="position: absolute; max-width: 45px; top: 382px; left: 488px; text-align: center;">0</div>
+                                    <div class="flot-tick-label" style="position: absolute; max-width: 45px; top: 382px; left: 32px; text-align: center;">-10</div>
+                                    <!-- More labels can be generated here -->
+                                    <!-- Example of dynamic generation of labels in JavaScript -->
+                                </div>
+                                <div class="flot-y-axis yAxis" style="position: absolute; inset: 0; display: block;">
+                                    <div class="flot-tick-label" style="position: absolute; left: 2px; text-align: right;">-0.060</div>
+                                    <div class="flot-tick-label" style="position: absolute; left: 2px; text-align: right;">-0.050</div>
+                                    <!-- More labels can be generated here -->
+                                </div>
+                            </div>
+                            <canvas class="flot-overlay" width="500" height="400" style="position: absolute; left: 0; top: 0;"></canvas>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr><td><p style="text-align:center"><i>V<sub>D</sub></i> [V]</p></td></tr></tbody></table>
+                
+        </div>
+        <div class="col-md-6">
+            <form name="data">
+            
+            <table align="center" style="border-collapse:collapse">
+            <tbody><tr><td class="gray">&nbsp;</td><td class="gray"></td></tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>c</sub> = </span></td>
+                    <td class="gray"><input size="10" value="2.78E19" name="Nc" type="text"> cm<sup>-3</sup> @ 300 K</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>v</sub> = </span></td>
+                    <td class="gray"><input size="10" value="9.84E18" name="Nv" type="text"> cm<sup>-3</sup> @ 300 K</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">E<sub>g</sub> = </span></td>
+                    <td class="gray"><input size="25" value="1.166-4.73E-4*T*T/(T+636)" name="Eg" type="text"> eV</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>D</sub> = </span></td>
+                    <td class="gray"><input size="10" value="1E19" name="Nd" type="text"> cm<sup>-3</sup></td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>A</sub> = </span></td>
+                    <td class="gray"><input size="10" value="1E15" name="Na" type="text"> cm<sup>-3</sup></td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">μ<sub>p</sub> = </span></td>
+                    <td class="gray"><input size="10" value="480" name="Mp" type="text"> cm<sup>2</sup>/Vs</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">h = </span></td>
+                    <td class="gray"><input size="10" value="3" name="h" type="text"> μm</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">L = </span></td>
+                    <td class="gray"><input size="10" value="100" name="L" type="text"> μm</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">Z = </span></td>
+                    <td class="gray"><input size="10" value="100" name="Z" type="text"> μm</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">ϵ<sub>r</sub> = </span></td>
+                    <td class="gray"><input size="10" value="11.9" name="eps" type="text"></td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">T = </span></td>
+                    <td class="gray"><input size="10" value="300" name="Temp" type="text"> K</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>D</sub> (min) = </span></td>
+                    <td class="gray"><input type="text" size="10" value="-10" name="VD"> V</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [1] = </span></td>
+                    <td class="gray"><input type="text" size="10" value="0" name="Vg1"> V</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [2] = </span></td>
+                    <td class="gray"><input type="text" size="10" value="1" name="Vg2"> V</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [3] = </span></td>
+                    <td class="gray"><input type="text" size="10" value="2" name="Vg3"> V</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [4] = </span></td>
+                    <td class="gray"><input type="text" size="10" value="3" name="Vg4"> V</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [5] = </span></td>
+                    <td class="gray"><input type="text" size="10" value="4" name="Vg5"> V</td>
+                </tr>
+                <tr>
+                    <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [6] = </span></td>
+                    <td class="gray"><input type="text" size="10" value="5" name="Vg6"> V</td>
+                </tr>
+            <tr>
+                <td colspan="2" class="button-group">
+                    <input type="button" onclick="plotn()" value="Replot">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button-group">
+                    <input type="button" value=" Si " onclick="setData('2.78E19', '9.84E18', '1.166-4.73E-4*T*T/(T+636)', '480', '11.9')">
+                    <input type="button" value=" Ge " onclick="setData('1.04E19', '6.0E18', '0.7437-4.77E-4*T*T/(T+235)', '1900', '16.2')">
+                    <input type="button" value=" GaAs " onclick="setData('4.45E17', '7.72E18', '1.519-5.41E-4*T*T/(T+204)', '400', '13.1')">
+                </td>
+            </tr>
+            
+            <script>
+                function setData(Nc, Nv, Eg, Mp, eps) {
+                    document.querySelector('input[name="Nc"]').value = Nc;
+                    document.querySelector('input[name="Nv"]').value = Nv;
+                    document.querySelector('input[name="Eg"]').value = Eg;
+                    document.querySelector('input[name="Mp"]').value = Mp;
+                    document.querySelector('input[name="eps"]').value = eps;
+                    plotn();
+                }
+            </script>
+            </tbody></table>
+            
+            </form>
 
+        </div>
+    </div>
+</div>
 
 
 <table align="center"><tbody><tr><td>
-<table><tbody>
-<tr>
-    <td><i>I<sub>D</sub></i>&nbsp;[mA]</td>
-    <td>
-        <div id="placeholder" style="width: 700px; height: 600px; position: relative;">
-            <canvas class="flot-base" width="500" height="400" style="position: absolute; left: 0; top: 0;"></canvas>
-            <div class="flot-text" style="position: absolute; inset: 0; font-size: smaller; color: #545454;">
-                <div class="flot-x-axis xAxis" style="position: absolute; inset: 0; display: block;">
-                    <!-- Use a loop or generate tick labels dynamically with JavaScript if possible -->
-                    <div class="flot-tick-label" style="position: absolute; max-width: 45px; top: 382px; left: 488px; text-align: center;">0</div>
-                    <div class="flot-tick-label" style="position: absolute; max-width: 45px; top: 382px; left: 32px; text-align: center;">-10</div>
-                    <!-- More labels can be generated here -->
-                    <!-- Example of dynamic generation of labels in JavaScript -->
-                </div>
-                <div class="flot-y-axis yAxis" style="position: absolute; inset: 0; display: block;">
-                    <div class="flot-tick-label" style="position: absolute; left: 2px; text-align: right;">-0.060</div>
-                    <div class="flot-tick-label" style="position: absolute; left: 2px; text-align: right;">-0.050</div>
-                    <!-- More labels can be generated here -->
-                </div>
-            </div>
-            <canvas class="flot-overlay" width="500" height="400" style="position: absolute; left: 0; top: 0;"></canvas>
-        </div>
-    </td>
-</tr>
-
-<tr><td></td><td><p style="text-align:center"><i>V<sub>D</sub></i> [V]</p></td></tr></tbody></table>
-</td><td>
-<form name="data">
-
-<table align="center" style="border-collapse:collapse">
-<tbody><tr><td class="gray">&nbsp;</td><td class="gray"></td></tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>c</sub> = </span></td>
-        <td class="gray"><input size="10" value="2.78E19" name="Nc" type="text"> cm<sup>-3</sup> @ 300 K</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>v</sub> = </span></td>
-        <td class="gray"><input size="10" value="9.84E18" name="Nv" type="text"> cm<sup>-3</sup> @ 300 K</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">E<sub>g</sub> = </span></td>
-        <td class="gray"><input size="25" value="1.166-4.73E-4*T*T/(T+636)" name="Eg" type="text"> eV</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>D</sub> = </span></td>
-        <td class="gray"><input size="10" value="1E19" name="Nd" type="text"> cm<sup>-3</sup></td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">N<sub>A</sub> = </span></td>
-        <td class="gray"><input size="10" value="1E15" name="Na" type="text"> cm<sup>-3</sup></td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">μ<sub>p</sub> = </span></td>
-        <td class="gray"><input size="10" value="480" name="Mp" type="text"> cm<sup>2</sup>/Vs</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">h = </span></td>
-        <td class="gray"><input size="10" value="3" name="h" type="text"> μm</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">L = </span></td>
-        <td class="gray"><input size="10" value="100" name="L" type="text"> μm</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">Z = </span></td>
-        <td class="gray"><input size="10" value="100" name="Z" type="text"> μm</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">ϵ<sub>r</sub> = </span></td>
-        <td class="gray"><input size="10" value="11.9" name="eps" type="text"></td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">T = </span></td>
-        <td class="gray"><input size="10" value="300" name="Temp" type="text"> K</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>D</sub> (min) = </span></td>
-        <td class="gray"><input type="text" size="10" value="-10" name="VD"> V</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [1] = </span></td>
-        <td class="gray"><input type="text" size="10" value="0" name="Vg1"> V</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [2] = </span></td>
-        <td class="gray"><input type="text" size="10" value="1" name="Vg2"> V</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [3] = </span></td>
-        <td class="gray"><input type="text" size="10" value="2" name="Vg3"> V</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [4] = </span></td>
-        <td class="gray"><input type="text" size="10" value="3" name="Vg4"> V</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [5] = </span></td>
-        <td class="gray"><input type="text" size="10" value="4" name="Vg5"> V</td>
-    </tr>
-    <tr>
-        <td class="gray" style="text-align:right;"><span class="mjx-char MJXc-TeX-math-I">V<sub>g</sub> [6] = </span></td>
-        <td class="gray"><input type="text" size="10" value="5" name="Vg6"> V</td>
-    </tr>
-<tr>
-    <td colspan="2" class="button-group">
-        <input type="button" onclick="plotn()" value="Replot">
-    </td>
-</tr>
-<tr>
-    <td colspan="2" class="button-group">
-        <input type="button" value=" Si " onclick="setData('2.78E19', '9.84E18', '1.166-4.73E-4*T*T/(T+636)', '480', '11.9')">
-        <input type="button" value=" Ge " onclick="setData('1.04E19', '6.0E18', '0.7437-4.77E-4*T*T/(T+235)', '1900', '16.2')">
-        <input type="button" value=" GaAs " onclick="setData('4.45E17', '7.72E18', '1.519-5.41E-4*T*T/(T+204)', '400', '13.1')">
-    </td>
-</tr>
-
-<script>
-    function setData(Nc, Nv, Eg, Mp, eps) {
-        document.querySelector('input[name="Nc"]').value = Nc;
-        document.querySelector('input[name="Nv"]').value = Nv;
-        document.querySelector('input[name="Eg"]').value = Eg;
-        document.querySelector('input[name="Mp"]').value = Mp;
-        document.querySelector('input[name="eps"]').value = eps;
-        plotn();
-    }
-</script>
-</tbody></table>
-
-</form>
-
-
-</td></tr></tbody></table>
+</td>
+</tr></tbody></table>
 <hr>
 <p>
     <span class="MathJax_Preview" style="display: none;"></span>
@@ -487,5 +495,9 @@ plotn();
 </p></td></tr></tbody></table>
 </div>
    <!--simulation end -->
-  </body><!--body tag end-->
+ 
+
+
+
+</body><!--body tag end-->
 </html><!--html tag end-->
